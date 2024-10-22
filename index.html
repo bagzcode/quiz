@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assessment Submission</title>
+    <title>Quiz 1 - HCI</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -29,18 +29,31 @@
             font-weight: bold;
             text-align: center;
         }
+        /* Center the iframe */
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        iframe {
+            width: 640px;
+            height: 480px;
+            max-width: 100%;
+            border: none;
+        }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <h1>Assessment Submission</h1>
+        <h1>Quiz 1</h1>
         <p class="warning">
             Warning: Cheating or the use of AI tools for this assessment is strictly prohibited. If detected, your score will be marked as <strong>Zero (0)</strong>, and <strong>no retake</strong> will be allowed under any circumstances. All submissions will be checked for <strong>similarity (<15%)</strong> and <strong>AI-generated content (0%)</strong>.
         </p>
-        <p><iframe width="640px" height="480px" src="https://forms.office.com/r/cqW50P0Jsk?embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe></p>
-        
+        <div class="iframe-container">
+            <iframe src="https://forms.office.com/r/cqW50P0Jsk?embed=true" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen></iframe>
+        </div>
     </div>
+
 </body>
 </html>
-
